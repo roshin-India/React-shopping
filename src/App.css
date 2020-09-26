@@ -6,3 +6,6 @@ a{
     text-decoration:none;
     colors:black;
 }
+*{
+    box-sizing: border-box;
+}
