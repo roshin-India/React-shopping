@@ -9,8 +9,6 @@ const MenuItem = ({title,imageUrl,size,history,linkUrl,match}) => (
             backgroundImage:`url(${imageUrl})`
         }} className="background-image"/>
         <div>
-        { console.log("ghgh",history) }
-        {  console.log("match",match) }
        </div>
         <div className='content'>
         
