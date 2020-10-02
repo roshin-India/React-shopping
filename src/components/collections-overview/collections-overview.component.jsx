@@ -7,7 +7,6 @@ import './collections-overview.styles.scss';
 
 const CollectionsOverview = ({collections})=>(
     <div className="collections-overview">
-    {console.log({collections})}
     {
         collections.map( ({id,...otherCollectionProp}) => (
             <CollectionPreview key={id} {...otherCollectionProp}/>
