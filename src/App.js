@@ -19,7 +19,7 @@ const App = ({checkUserSession,currentUser}) => {
        * This is same as  componentDidMount() in class
        */
       checkUserSession()
-    },[checkUserSession])
+    },[checkUserSession])                     
     return (
       <div>
       <Header/>
