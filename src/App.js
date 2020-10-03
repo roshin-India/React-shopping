@@ -2,7 +2,6 @@ import React,{useEffect} from 'react';
 import {Switch,Route, Redirect} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {createStructuredSelector} from 'reselect';
-import './App.css';
 import HomePage from './pages/home-pages/homepage.component';
 import ShopPage from './pages/shop/shop.component';
 import Header from "./components/header/header.component";
@@ -10,6 +9,7 @@ import SignInAndSignUp from './pages/sign-in-and-sign-up/sign-in-and-sign-up.com
 import { selectCurrentUser } from './redux/user/user.selector';
 import CheckoutPage from './pages/checkout/checkout.component';
 import {checkUserSession} from './redux/user/user.actions';
+import GlobalStyle from './global.styles';
 /**
  * When use useEffect need functional component.
  */
@@ -22,6 +22,7 @@ const App = ({checkUserSession,currentUser}) => {
     },[checkUserSession])                     
     return (
       <div>
+      <GlobalStyle/>
       <Header/>
       <Switch>
         <Route  exact path="/" component={HomePage} />
